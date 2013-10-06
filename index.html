@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CFHP - Crowd Funded Housing Projects</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->    
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+    
+    <script type="text/javascript" src="js/calculations.js"></script>
+    
+</head>
+
+
+
+<body>
+   
+    <!--page_container-->
+    <div class="page_container">
+        <!--slider-->
+        <div id="header_image">
+            <div id="main_title">
+	            <h1>Crowdfunding your dream house</h1>
+	            <h2>with the help of your friends, families and trusted people</h2>
+            </div>
+        </div>        
+        <!--//slider-->
+ 
+ 
+
+
+         
+       
+        <!--  =========  About =========  -->
+        <div class="wrap planning">
+            <div class="container">
+                <div class="row calc" style="margin-left:5px;">
+                	<div class="about span11">
+                        <span class="calc_title">ABOUT</span>	                        
+                      
+                        <span>CFHP is a free service which allows you to collect and manage micro-funds to build or buy your own house. Instead of taking traditional loans from banks which require certain credit scores and have different interest rates, you can finance your project from multiple individuals who are willing to invest smaller amount of capital for an agreed return profit.</span>
+                        </div>
+	                </div>
+            </div>
+        </div>
+        <!--//About-->
+      
+      
+      <br/>
+           
+           
+           
+           
+                       
+        <!--  =========  Our Services =========  -->
+        <div class="wrap planning">
+            <div class="container">
+                <div class="row">
+                    <div class="span3">
+                        <a href="#">
+                        	<span class="img_icon icon4"></span>
+                            <span class="link_title">Estimate Costs</span>
+                        	Use the Calculator below to estimate the total cost of a project and determine your repayment timeline.
+                        </a>
+                    </div>
+                    <div class="span3">
+                        <a href="#">
+                        	<span class="img_icon icon2"></span>
+                            <span class="link_title">Find Investors</span>
+                        	Learn about who are potential investors and how to find and involve them in your housing project.
+                        </a>
+                    </div>
+                    <div class="span3">
+                        <a href="#">
+                        	<span class="img_icon icon3"></span>
+                            <span class="link_title">Agree on Terms</span>
+                        	Use our services to create a project plan, set goals and create agreements between you and the investors.
+                        </a>
+                    </div>
+                    <div class="span3">
+                        <a href="#">
+                        	<span class="img_icon icon1"></span>
+                            <span class="link_title">Maintain Project</span>
+                        	Use the CFHP Admin Tools to keep track of the progress of your ongoing projects and to create reports.
+                        </a>
+                    </div>                           	
+                </div>
+            </div>
+        </div>
+        <!--//Our Services-->
+        
+  
+ 
+ 
+ 
+ 
+  
+   
+        
+         
+ 
+                        
+        <!--  =========  Calculator =========  -->
+        <div class="wrap planning">
+            <div class="container">
+                <div class="row calc" style="margin-left:5px;">
+                	<div class="span12">
+                
+	                    <div class="span3">
+	                        <div class="calc_form">
+		                        <span class="calc_title">Calculator</span>	                        
+		                        <br/>
+		                        
+		                        <!--  =========  Beginning of Calculator Form & Fields =========  -->
+		                        <form class="form-signin">
+			                        <fieldset>
+				                        <label>Cost of Property <span style="color:red">*</span></label>
+				                        <div class="input-prepend input-append" >
+					                        <span class="add-on">€</span>
+					                        <input class="span2" id="costProperty" type="text" 
+					                        	rel="popover" 
+					                        	data-placement="right" 
+					                        	data-content="The total cost of the property you want to purchase including all taxes and expenditures" 
+					                        	data-animation="true"
+					                        	data-trigger="focus"
+					                        	title="Cost of Property" 
+					                        	onfocus="$(this).popover('show');">
+					                        <span class="add-on">.00</span>
+					                    </div>
+					                    <br/>
+					                    <label>Available Capital <span style="color:red">*</span></label>
+				                    	<div class="input-prepend input-append">
+					                    	<span class="add-on">€</span>
+					                    	<input class="span2" id="availableCapital" type="text"
+					                    		rel="popover" 
+					                        	data-placement="right" 
+					                        	data-content="Your current available capital for this purchase. (for example your savings)" 
+					                        	data-animation="true"
+					                        	data-trigger="focus"
+					                        	title="Available Capital" 
+					                        	onfocus="$(this).popover('show');">
+					                    	<span class="add-on">.00</span>
+					                    </div>
+						                <br/>
+						                <label>Monthly Rent from Property <span style="color:red">*</span></label>
+									    <div class="input-prepend input-append">
+										    <span class="add-on">€</span>
+										    <input class="span2" id="monthlyRent" type="text"
+										    rel="popover" 
+					                        	data-placement="right" 
+					                        	data-content="Expected net amount of rent from the property. This will be used to calculate the profit rate for investors" 
+					                        	data-animation="true"
+					                        	data-trigger="focus"
+					                        	title="Monthly Rent from Property" 
+					                        	onfocus="$(this).popover('show');">
+										    <span class="add-on">.00</span>
+										</div> 
+										
+										<br/>
+						                <label>Monthly Payback Budget <span style="color:red">*</span></label>
+									    <div class="input-prepend input-append">
+										    <span class="add-on">€</span>
+										    <input class="span2" id="monthlyBudget" type="text"
+										    rel="popover" 
+					                        	data-placement="right" 
+					                        	data-content="Expected amount of money which you can afford to pay every month until the end of the project" 
+					                        	data-animation="true"
+					                        	data-trigger="focus"
+					                        	title="Monthly Payback Budget" 
+					                        	onfocus="$(this).popover('show');">
+										    <span class="add-on">.00</span>
+										</div>   
+										<br/><br/>
+										<div> <button class="btn btn-large btn-info" type="button" onclick="calculateDuration()")>Calculate</button>
+										
+										</div>						  
+										
+									  </fieldset>
+								</form>
+								<!--  =========  End of Calculator Form & Fields =========  -->
+		                        </div>
+		                    </div>
+		                 
+		                 
+		                  
+		                 <div class="span3 offset1">
+	                     	<div class="row">
+	                        	<div class="calc_result">
+	                        		<blockquote>
+	                        			<p>Required Capital <br/><span class="result_value" id="requiredCapital"><strong> 0 €</strong></span></p>
+	                        		</blockquote>
+	                        		
+	                        		<blockquote>
+	                        			<p>Required investors<br/><span class="result_value" id="requiredInvestors"><strong> 0 Investors</strong></span></p>
+	                        		</blockquote>
+	                        		
+	                        		<blockquote>
+	                        			<p>With average contribution of<br/><span class="result_value" id="averageContribution"><strong> 0 €</strong></span></p>	                  
+	                        		</blockquote>
+		                     	</div>
+	                        </div>
+		                 </div>          	
+	 
+		                  <div class="span3">
+		                     	<div class="row">
+		                        	<div class="calc_result">
+		                        		<blockquote>
+		                        			<p>Total profit to be paid: <br/><span class="result_value" id="totalProfitToPay"><strong> 0 €</strong></span></p>
+		                        		</blockquote>
+		                        		
+		                        		<blockquote>
+		                        			<p>Total cost of the project:<br/><span class="result_value" id="totalAmountToPay"><strong> 0 €</strong></span></p>
+		                        		</blockquote>
+		                        		
+		                        		<blockquote>
+		                        			<p>Time to repay total cost<br/><span class="result_value" id="totalDuration"><strong> 0 Years</strong></span></p>
+		                        		</blockquote>
+		                        		 
+			                     	</div>
+		                        </div>
+			                 </div>          	
+	                	</div>
+	                </div>
+            </div>
+        </div>
+        <!--//Calculator-->
+        
+        
+        
+        
+            
+         
+  
+    </div>
+    <!--//page_container-->
+    
+    <!--  =========  footer  =========  -->
+    <div id="footer">
+    	<div class="wrap">
+    		<div class="container">
+            	<div class="row">
+                	  <div class="span3">
+	                	  <h2 class="title">important</h2>
+	                        <ul>
+	                        	<li>
+	                            	<span class="testimonials_arrow"></span>Orci nisi, luctus vitae imperdiet a, iquam vel urna. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullamcorper pulvinar, massa libero magna.
+	                            	<div class="clear"></div>
+	                            </li>
+	                            <li>
+	                            	<span class="testimonials_arrow"></span>Luctus vitae imperdiet a, iquamorci nisi lorem. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullam pulvinar, massa libero consequat egestas mas.
+	                            	<div class="clear"></div>
+	                            </li>
+	                        </ul>    
+                	  </div>
+                	  
+                	  
+                	  
+                	  <div class="span3">
+                	  	<h2 class="title">Legal notice</h2>
+	                	 <ul>
+                        	<li>
+                            	<span class="testimonials_arrow"></span>Orci nisi, luctus vitae imperdiet a, iquam vel urna. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullamcorper pulvinar, massa libero magna.
+                            	<div class="clear"></div>
+                            </li>
+                            <li>
+                            	<span class="testimonials_arrow"></span>Luctus vitae imperdiet a, iquamorci nisi lorem. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullam pulvinar, massa libero consequat egestas mas.
+                            	<div class="clear"></div>
+                            </li>
+                        </ul>    
+                	  </div>
+                	  
+                	  
+                	  <div class="span3">
+	                	 <h2 class="title">Services</h2>
+	                	 <ul>
+                        	<li>
+                            	<span class="testimonials_arrow"></span>Orci nisi, luctus vitae imperdiet a, iquam vel urna. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullamcorper pulvinar, massa libero magna.
+                            	<div class="clear"></div>
+                            </li>
+                            <li>
+                            	<span class="testimonials_arrow"></span>Luctus vitae imperdiet a, iquamorci nisi lorem. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullam pulvinar, massa libero consequat egestas mas.
+                            	<div class="clear"></div>
+                            </li>
+                        </ul>    
+                	  </div>
+                	  
+                	  <div class="span3">
+	                	  <h2 class="title">Contact</h2>
+	                	 <ul>
+                        	<li>
+                            	<span class="testimonials_arrow"></span>Orci nisi, luctus vitae imperdiet a, iquam vel urna. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullamcorper pulvinar, massa libero magna.
+                            	<div class="clear"></div>
+                            </li>
+                            <li>
+                            	<span class="testimonials_arrow"></span>Luctus vitae imperdiet a, iquamorci nisi lorem. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullam pulvinar, massa libero consequat egestas mas.
+                            	<div class="clear"></div>
+                            </li>
+                        </ul>    
+                	  </div>      	
+            	</div>
+        	</div>            
+        </div>
+        
+        <div class="footer_bottom">
+            <div class="wrap">
+            	<div class="container">
+                	<div class="row">
+                		<div class="span5">
+                        	<div class="copyright">&copy; 2013 Crowd Funded Housing Projects. All Rights Reserved.</div>                        
+                        </div>
+                       
+                        <div class="span7">
+                        	<div class="foot_right_block">
+                            	<div class="foot_menu">
+                            		<ul>
+                                        <li><a href="#" class="current">Home</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Contacts</a></li>
+                                    </ul>
+                            	</div>
+                            </div>                            
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//footer-->    
+
+	
+	
+</body>
+</html>
+
